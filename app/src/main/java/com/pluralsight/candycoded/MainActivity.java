@@ -80,14 +80,14 @@ public class MainActivity extends AppCompatActivity {
         inflater.inflate(R.menu.main, menu);
         return true;
     }
+    // ***
+    // TODO - Task 1 - Show Store Information Activity
+    // ***
+
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()){
-            case R.id.info:
-                Intent intent = new Intent(MainActivity.this, InfoActivity.class);
-                startActivity(intent);
-        }
+        Intent intent = new Intent(MainActivity.this, InfoActivity.class);
         return super.onOptionsItemSelected(item);
     }
 
